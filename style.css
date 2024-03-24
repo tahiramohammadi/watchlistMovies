@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body{
+        font-family: "Roboto Serif", serif;
+        font-weight: 200px;
+        font-style: normal; 
+        padding: 0;
+        margin: 0;  
+}
+header{
+ background-image: url("images/background.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+ height: 240px;
+ background-position: center;
+ opacity: 1;
+}
+#findFilm{
+    color:white;
+    font-size:4rem;
+    font-weight: bold;
+   
+}
+.watchlist{
+    text-decoration: none;
+    color: white;
+    font-size:2rem;
+    font-weight: bold;
+}
+ .watchlist:hover{
+    color: goldenrod;
+}
+.searching{
+   padding: 0 3em;
+   position:relative;
+   margin-top:-20px;
+  
+}
+
+input[type=text] {
+    width: 90%;
+    border: 2px solid #ccc;
+    border-radius: 4px 0px 0px 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url("images/search.jpg");
+    background-position: 2px 3px; 
+    background-repeat: no-repeat;
+    background-size: 30px;
+    padding: 12px 20px 12px 40px;
+  }
+  input:focus {
+   outline: none;
+}
+  .btn-search{
+    padding: 12px 20px 12px 40px;
+    border-radius: 0px 4px 4px 0px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    position:absolute;
+    cursor: pointer;
+  }
+  .movie-container{
+ width:100%;
+ display:flex;
+
+
+  }
+  .hidden {
+    display: none;
+}
+  .movies{
+   display: flex;
+   margin-left:30px;
+   margin-top:30px;
+   margin-bottom: 30px;
+  }
+  .moviePoster{
+      width: 200px;
+      height: 200px;  
+  }
+
+.title_info{
+    display: flex;
+    padding-top:20px;
+
+}
+.title{
+    font-size:20px;
+   margin-left:20px;
+}
+.star{
+    color:goldenrod;
+    padding:0 10px;
+}
+.movie-rating{
+    font-size:20px;
+    margin-top:-5px;
+}
+.runtime{
+    display: flex;
+    margin-top:60px;
+    margin-left:-170px;
+   
+}
+.second-line-movie-desc{
+   font-size: 20px; 
+}
+.movie-genre{
+    padding-left:5px;
+}
+.addToWatchListBtn{
+  width: 100px;
+  height: 50px;
+  margin-left:10px;
+  outline: none;
+  background-color: white;
+  border:none;
+  font-size:15px;
+  cursor: pointer;
+}
+.addToWatchListBtn:hover{
+    color:goldenrod;
+}
+.synopsis{
+    margin-left:250px;
+    margin-top:-90px;
+}
+.plot{
+    margin-top:60px;
+    margin-left:-350px;
+}
