@@ -4,7 +4,6 @@
 
 html, body{
         font-family: "Roboto Serif", serif;
-        font-weight: 200px;
         font-style: normal; 
         padding: 0;
         margin: 0;  
@@ -26,10 +25,10 @@ header{
     font-weight: bold;
    
 }
-.watchlist{
+ .watchlist{
     text-decoration: none;
     color: white;
-    font-size:2rem;
+    font-size:3rem;
     font-weight: bold;
 }
  .watchlist:hover{
@@ -39,11 +38,11 @@ header{
    padding: 0 3em;
    position:relative;
    margin-top:-20px;
+ 
   
 }
 
 input[type=text] {
-    width: 90%;
     border: 2px solid #ccc;
     border-radius: 4px 0px 0px 4px;
     font-size: 16px;
@@ -52,6 +51,7 @@ input[type=text] {
     background-position: 2px 3px; 
     background-repeat: no-repeat;
     background-size: 30px;
+    width: 90%;
     padding: 12px 20px 12px 40px;
   }
   input:focus {
@@ -65,73 +65,86 @@ input[type=text] {
     position:absolute;
     cursor: pointer;
   }
-  .movie-container{
- width:100%;
- display:flex;
-
-
-  }
-  .hidden {
-    display: none;
-}
-  .movies{
-   display: flex;
-   margin-left:30px;
-   margin-top:30px;
-   margin-bottom: 30px;
-  }
-  .moviePoster{
-      width: 200px;
-      height: 200px;  
+  .mywatchlist,
+ .movie-container{
+     min-height:60.93vh;
+     width: 100%; 
+  
   }
 
-.title_info{
+ .movies{
     display: flex;
-    padding-top:20px;
+    border-bottom: 3px solid lightgray;
+ }
+ .every_movies{
+    padding: 30px 30px 5px 10px;
+  
+}
+   .moviePoster{
+    width: 160px;
+    height: 160px; 
+
+  }
+
+
+ .title_info{
+  display: flex;
+  gap:2px;
+    padding: 20px 0px 0px 0px;
+  
 
 }
 .title{
-    font-size:20px;
-   margin-left:20px;
+    font-size:35px;
+   margin-top:0;
+
 }
-.star{
+ .star{
     color:goldenrod;
-    padding:0 10px;
-}
-.movie-rating{
-    font-size:20px;
-    margin-top:-5px;
-}
+    font-size:25px;
+    padding:  5px 0px 5px 0px;
+          margin-top:10px;
+} 
+ .movie-rating{
+    font-size:30px;
+     padding: 0 5px;
+    margin-top:8px;
+} 
 .runtime{
-    display: flex;
-    margin-top:60px;
-    margin-left:-170px;
+ display: flex;
+ margin-top:-30px;
+
    
 }
 .second-line-movie-desc{
-   font-size: 20px; 
+    font-size: 20px;
 }
-.movie-genre{
-    padding-left:5px;
+.run{
+    font-size: 20px;  
 }
+.movie-genre p{
+    font-size: 20px;
+}
+
 .addToWatchListBtn{
   width: 100px;
   height: 50px;
-  margin-left:10px;
   outline: none;
   background-color: white;
   border:none;
   font-size:15px;
   cursor: pointer;
+margin-top:5px;
+
 }
 .addToWatchListBtn:hover{
     color:goldenrod;
+    outline: none;
 }
 .synopsis{
-    margin-left:250px;
-    margin-top:-90px;
+    margin-top:-200px;
 }
 .plot{
     margin-top:60px;
     margin-left:-350px;
-}
+} 

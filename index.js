@@ -23,37 +23,43 @@ let watchlist = [];
           
                   document.getElementById("movieList").innerHTML +=`
                   <div class="movies">
+                  <div class="every_movies">
                   <img src="${movies.Poster}" class="moviePoster">
+                  </div>  
+                  <div class="info">             
                   <div class="title_info">
-                  <div class="title">${movies.Title}</div>
+                  <h4 class="title">${movies.Title}</h4>
                   <i class="fa-solid  fa-star star"></i>
-                  <p class="movie-rating">${movies.imdbRating}</p>
-                  </div>
-                    
-                  <div class="runtime">
-                  <div id=${movies.imdbID} class="second-line-movie-desc"></div>
-                  <p class="run">${movies.Runtime}</p>
-                  <div class="movie-genre">
-                      <p>${movies.Genre}</p>
-                  </div>
-                  <button class ="addToWatchListBtn"  data-movie='${JSON.stringify(movies.imdbID)}'> 
-                      <i class="fa-solid fa-circle-plus"></i> Watchlist 
-                  </button>
-                  </div>
-                  </div>
-                  <div class="synopsis">
-                  <p >${movies.Plot}</p> 
+                  <span class="movie-rating">${movies.imdbRating}</span>
+                    </div>
+                <div class="runtime">
+             <p id=${movies.imdbID} class="second-line-movie-desc"></p>
+             <p class="run">${movies.Runtime}</p>
+             <div class="movie-genre">
+                 <p>${movies.Genre}</p>
+                 </div>  
+                 <button class ="addToWatchListBtn"  data-movie='${JSON.stringify(movies.imdbID)}'> 
+                 <i class="fa-solid fa-circle-plus"></i> Watchlist 
+             </button>
+             </div>
+             <div class="synopsis">
+             <p >${movies.Plot}</p> 
+             </div>
                 </div>
+             </div>
                   `
         })
         });
       }
+      
       else {
         document.getElementById("movieList").innerHTML = `<div>Unable to find what you're looking for. Please try another search</div>`
      }
     })
 }
-    
+  
+
+
 document.addEventListener("click", async (e) => {
     const imdbIDForSe = e.target.dataset.movie;
     let imdbID = JSON.parse(imdbIDForSe);
