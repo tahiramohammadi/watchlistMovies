@@ -53,7 +53,7 @@ let watchlist = [];
       }
       
       else {
-        document.getElementById("movieList").innerHTML = `<div>Unable to find what you're looking for. Please try another search</div>`
+        document.getElementById("movieList").innerHTML = `<div class="not-find">Unable to find what you're looking for. Please try another search</div>`
      }
     })
 }

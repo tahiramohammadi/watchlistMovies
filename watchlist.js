@@ -23,11 +23,15 @@ watchlist.forEach(movies => {
       <p class="run">${movies.Runtime}</p>
       <div class="movie-genre">
           <p>${movies.Genre}</p>
-          </div>  
-        <div class="plot">
-        <p >${movies.Plot}</p> 
-      </div>
-    </div>
+          </div>
+          <button class ="remove"  data-movie='${JSON.stringify(movies.imdbID)}'> 
+          <i class="fa-solid fa-circle-minus"></i> Remove
+      </button>  
+          </div>
+          <div class="synopsis">
+          <p >${movies.Plot}</p> 
+          </div>
+     </div>
     </div>
     `
 });
